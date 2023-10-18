@@ -73,6 +73,15 @@ const initViewer = () => {
   viewer.cesiumWidget.creditContainer.style.display = "none";
   // // 增加太阳光照
   viewer.scene.globe.enableLighting = true;
+  // 显示帧数
+  viewer.scene.debugShowFramesPerSecond = true;
+  // 显示大气层
+  viewer.scene.skyAtmosphere.show = false;
+  // 开启地形深度检测
+  viewer.scene.globe.depthTestAgainstTerrain = true;
+  // 禁止相机进入地下
+  viewer.scene.globe.depthTestAgainstTerrain = true;
+
   loadEarthAtNight();
 };
 
